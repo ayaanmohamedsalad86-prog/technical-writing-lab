@@ -35,3 +35,15 @@ This endpoint does not require any query parameters.
 | assignee_id | Integer | Yes | The ID of the user assigned to the task. |
 | due_date | String (Date) | Yes | The task deadline in YYYY-MM-DD format. |
 | priority | String | Yes | The priority level: low, medium, or high. |
+### 5. HTTP Response Codes
+
+| Status Code | Meaning | Description |
+|---|---|---|
+| 201 | Created | The task was successfully created. |
+| 400 | Bad Request | The request contains invalid or missing information. |
+| 401 | Unauthorized | The user is not authenticated or the access token is invalid. |
+| 403 | Forbidden | The user does not have permission to create tasks in this project. |
+| 404 | Not Found | The specified project or assignee does not exist. |
+| 409 | Conflict | The request conflicts with the current project data. |
+| 422 | Unprocessable Entity | The submitted task information fails validation, such as an invalid priority. |
+| 500 | Internal Server Error | An unexpected server error occurred. |
