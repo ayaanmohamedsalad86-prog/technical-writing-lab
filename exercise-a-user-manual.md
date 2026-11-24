@@ -52,4 +52,12 @@ Open the README file, click the pencil icon, and add a short description of your
 
 Click Commit changes, enter the commit message `Add project description`, and confirm the commit.
 
-**Expected result:** Your changes are saved, and the commit appears in your repository history.
+**Expected result:** Your changes are saved, and the commit appears in your repository history.                                                                                  ## Screenshot Description
+
+**Screenshot 1: GitHub repository page**
+
+The screenshot should show the newly created repository, its name, the README file, and the commit history. It should help the reader confirm that the repository was created successfully.                                                                                                                                                                    ## Troubleshooting
+
+**Problem:** GitHub displays an error saying the repository name already exists.
+
+**Solution:** Choose a different repository name and try creating the repository again.
