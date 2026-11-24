@@ -47,3 +47,16 @@ This endpoint does not require any query parameters.
 | 409 | Conflict | The request conflicts with the current project data. |
 | 422 | Unprocessable Entity | The submitted task information fails validation, such as an invalid priority. |
 | 500 | Internal Server Error | An unexpected server error occurred. |
+### 6. Example Request Body
+
+The following JSON example shows how to submit a new task.
+
+```json
+{
+  "title": "Complete Python Assignment",
+  "description": "Finish the Week 8 Python exercises",
+  "assignee_id": 102,
+  "due_date": "2026-12-01",
+  "priority": "high"
+}
+```
